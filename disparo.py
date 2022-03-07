@@ -5,6 +5,12 @@ from email.mime.text import MIMEText
 # Configuração
 host = 'smtp.nathyelle.com.br'
 port = 587
+with open("email.txt", "r") as arquivo:
+    user = arquivo.read()
+
+with open("senha.txt", "r") as arquivo:
+    password = arquivo.readline(2)
+
 user = 'pedrohenrique@nathyelle.com.br'
 password = 'Papaalfa168191'
 
